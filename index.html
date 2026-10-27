@@ -1,0 +1,333 @@
+﻿<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>🪔 Happy Diwali 2026 — Festival of Lights Special Edition</title>
+<meta name="description" content="Happy Diwali 2026 — दीपावली का सबसे रोशन जश्न। Diwali dohas, fireworks, diyas aur sabse zyada gyaan — bilkul free!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;600;700;800&family=Rozha+One&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🪔</text></svg>">
+<meta property="og:title" content="Happy Diwali 2026 — Festival of Lights 🪔">
+<meta property="og:description" content="दीपावली 2026 Special: Diwali dohas, fireworks — रोशनी का उत्सव!">
+</head>
+<body>
+
+<a class="skip" href="#bookshelf-section">मुख्य Library पर जाएँ</a>
+
+<!-- FIREWORKS CANVAS — click anywhere to burst! -->
+<canvas id="fireworksCanvas" aria-hidden="true" title="Click here for fireworks! 🎆"></canvas>
+
+<!-- ===== INTRO GATE ===== -->
+<div id="introGate" role="dialog" aria-label="Happy Diwali 2026 — स्वागत" aria-modal="true">
+  <div class="gate-card">
+    <div class="gate-diya">🪔</div>
+    <div class="diya-strip" style="margin:10px 0">
+      <span>🪔</span><span>✨</span><span>🎆</span><span>🪔</span><span>✨</span><span>🎇</span><span>🪔</span>
+    </div>
+    <h1 class="gold-emboss-text" style="font-size:clamp(2rem,8vw,3.2rem);margin:.2em 0">
+      Happy Diwali 2026
+    </h1>
+    <p style="font-size:1.15rem;color:var(--gold);margin:6px 0 4px;font-weight:700">
+      🎆 Festival of Lights — दीपावली Special 🎆
+    </p>
+    <p style="color:var(--cream);margin-bottom:8px">
+      जहाँ ज्ञान का दीप जलता है, वहाँ अंधकार टिकता नहीं।
+    </p>
+    <p style="color:var(--muted);font-size:.88rem;margin-bottom:22px">
+      आपके और आपके परिवार को दीपावली की हार्दिक शुभकामनाएँ 🙏
+    </p>
+    <button class="btn" id="enterBtn" style="font-size:1.15rem;padding:16px 42px">
+      🪔 द्वार खोलें — Enter the Light
+    </button>
+    <p style="color:var(--muted);font-size:.82rem;margin-top:14px">
+      🔔 Click करने पर ghanti + fireworks बजेंगे!
+    </p>
+  </div>
+</div>
+
+<!-- ===== NAV ===== -->
+<header class="topnav">
+  <nav class="pill" aria-label="मुख्य नेविगेशन">
+    <a class="brand" href="index.html">
+      <span style="font-size:1.5rem;animation:flicker 2s ease-in-out infinite;filter:drop-shadow(0 0 8px #ff8c00)">🪔</span>
+      <span>Happy Diwali 2026<small>Festival of Lights</small></span>
+    </a>
+    <div class="navlinks">
+      <a href="#bookshelf-section">🪔 Library</a>
+      <a href="puniverse.html">🕯️ Story of Diwali</a>
+      <a href="contact.html">☕ Sponsor</a>
+    </div>
+  </nav>
+</header>
+
+<!-- SCROLLING TICKER -->
+<div class="ticker-wrap" style="position:fixed;top:0;left:0;right:0;z-index:49;transform:translateY(-100%);transition:transform .5s" id="tickerBar">
+  <div class="ticker">
+    <span>🪔 Happy Diwali 2026 — दीपावली की हार्दिक शुभकामनाएँ</span>
+    <span>🎆 Festival of Lights — रोशनी का उत्सव</span>
+    <span>✨ ज्ञान का दीप जलाओ — अंधेरा दूर भगाओ</span>
+    <span>🎇 Click canvas for fireworks! 🔔 Sound effects ON करो!</span>
+    <span>🪔 Happy Diwali 2026 — लक्ष्मी माँ का आशीर्वाद मिले</span>
+    <span>🏮 Diwali 2026 — 5 Live Books — 300+ Diwali Dohe — FREE</span>
+    <span>🪔 Happy Diwali 2026 — दीपावली की हार्दिक शुभकामनाएँ</span>
+    <span>🎆 Festival of Lights — रोशनी का उत्सव</span>
+    <span>✨ ज्ञान का दीप जलाओ — अंधेरा दूर भगाओ</span>
+    <span>🎇 Click canvas for fireworks! 🔔 Sound effects ON करो!</span>
+    <span>🪔 Happy Diwali 2026 — लक्ष्मी माँ का आशीर्वाद मिले</span>
+    <span>🏮 Diwali 2026 — 5 Live Books — 300+ Diwali Dohe — FREE</span>
+  </div>
+</div>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<div class="hero" style="padding-top:130px">
+  <div class="hero-bg"></div>
+  <div class="hero-pillars" aria-hidden="true"></div>
+  <div class="hero-content">
+    <div class="hero-tag">🎆 दीपावली Special Edition 2026 🎆</div>
+    <div class="hero-diya">🪔</div>
+    <h1 class="gold-emboss-text">Happy Diwali 2026</h1>
+    <p class="hero-subtitle">दीपावली की हार्दिक शुभकामनाएँ 🙏</p>
+    <p class="hero-tagline">
+      रोशनी, खुशी, ज्ञान और समृद्धि का त्यौहार — आपके जीवन को प्रकाशित करे 🪔
+    </p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-bottom:16px">
+      <a class="btn" href="#bookshelf-section">🪔 Library खोलें</a>
+      <button class="btn ghost" id="fireworksBtn" style="cursor:pointer">🎆 Fireworks!</button>
+    </div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center;align-items:center">
+      <button class="btn ghost" id="musicToggleHome" style="padding:10px 22px;font-size:.95rem">🔇 Music OFF</button>
+      <span style="color:var(--muted);font-size:.85rem">← Click for Diwali ambience 🎵</span>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">﹀</div>
+  </div>
+</div>
+
+<!-- DIYA STRIP -->
+<div style="padding:8px 0;background:linear-gradient(90deg,#0a0500,#1c0a00,#0a0500)">
+  <div class="diya-strip">
+    <span>🪔</span><span>🪔</span><span>🪔</span><span>🪔</span><span>🎆</span>
+    <span>🪔</span><span>🪔</span><span>🪔</span><span>🎇</span><span>🪔</span>
+    <span>🪔</span><span>🪔</span><span>🪔</span><span>🪔</span><span>🪔</span>
+  </div>
+</div>
+
+<!-- ===== GREETING SECTION ===== -->
+<section class="block" style="padding-top:52px">
+  <div class="eyebrow">✦ दीपावली 2026 का संदेश ✦</div>
+  <h2 class="sec gold-emboss-text">Happy Diwali 2026 🪔</h2>
+  <p class="lead">अंधकार से प्रकाश की ओर — इस दीपावली अपने जीवन को रोशन करें</p>
+
+  <div class="grid c3" style="margin-top:28px">
+    <div class="card diya-card">
+      <span class="diya-big">🪔</span>
+      <h3>ज्ञान का दीप</h3>
+      <p style="color:var(--muted)">अज्ञान के अंधकार को दूर करने वाला सबसे बड़ा दीपक — ज्ञान का प्रकाश। Happy Diwali 2026!</p>
+    </div>
+    <div class="card diya-card">
+      <span class="diya-big">🎆</span>
+      <h3>उत्सव का आनंद</h3>
+      <p style="color:var(--muted)">दीपावली वो उत्सव है जो बताता है — हर अँधेरे के बाद रोशनी आती है। 2026 की दिवाली सबसे यादगार हो!</p>
+    </div>
+    <div class="card diya-card">
+      <span class="diya-big">✨</span>
+      <h3>समृद्धि की कामना</h3>
+      <p style="color:var(--muted)">लक्ष्मी माँ सबके घर आएँ, पोहे सबको मिलें — Happy Diwali 2026! 🙏</p>
+    </div>
+  </div>
+
+  <!-- DIWALI DOHE -->
+  <div class="diwali-divider" style="margin-top:40px"><span>🪔 दीपावली 2026 दोहे 🪔</span></div>
+  <div class="grid c2" style="margin-top:22px">
+    <div class="card">
+      <div style="font-size:2rem;text-align:center;margin-bottom:12px">🪔</div>
+      <p class="doha" style="font-size:1.2rem;text-align:center;line-height:2;color:var(--cream)">
+        "दीप जलाओ मन में पहले, फिर घर में जलाओ।<br>
+        Happy Diwali 2026 — जीवन को रोशन करो ॥"
+      </p>
+      <p style="text-align:center;color:var(--muted);font-size:.88rem;margin-top:8px">— दीपावली 2026 Special</p>
+    </div>
+    <div class="card">
+      <div style="font-size:2rem;text-align:center;margin-bottom:12px">🎆</div>
+      <p class="doha" style="font-size:1.2rem;text-align:center;line-height:2;color:var(--cream)">
+        "पटाखे फूटें आसमान में, दिल में जले दीया।<br>
+        Diwali 2026 की रोशनी में — सबका हो जिया ॥"
+      </p>
+      <p style="text-align:center;color:var(--muted);font-size:.88rem;margin-top:8px">— दीपावली 2026 Special</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== BOOKSHELF ===== -->
+<section class="block" id="bookshelf-section" tabindex="-1">
+  <div class="diwali-divider"><span>🪔 Diwali Library 📚</span></div>
+  <div class="eyebrow">✦ Happy Diwali 2026 — Library ✦</div>
+  <h2 class="sec">Diwali Dohe Book Shelf 🪔</h2>
+  <p class="lead">किसी भी Book पर tap करें — Diwali 2026 के Special Dohe पढ़ें! (Hover करने पर sound भी सुनो 🎵)</p>
+
+  <div class="bookcase">
+    <div class="arch">🪔 Happy Diwali 2026 — Gyaan Vault 🪔</div>
+    <div class="shelf-row" id="shelfRow" aria-label="Diwali Book Shelf"></div>
+    <div class="shelf-plank"></div>
+    <div class="coll-line" id="collLine">Loading…</div>
+  </div>
+  <p class="lead" style="margin-top:16px">"Happy Diwali 2026 — ज्ञान पढ़ो, जीवन रोशन करो। 🪔"</p>
+</section>
+
+<!-- STATS -->
+<section class="block" style="padding-top:20px;padding-bottom:40px">
+  <div class="stats">
+    <div class="stat"><span class="num">5</span><div class="lbl">Live Books</div></div>
+    <div class="stat"><span class="num">300+</span><div class="lbl">Diwali Dohe</div></div>
+    <div class="stat"><span class="num">🔔</span><div class="lbl">Sound Effects</div></div>
+    <div class="stat"><span class="num">∞</span><div class="lbl">Gyaan — FREE</div></div>
+  </div>
+</section>
+
+<!-- ===== MUSIC + DIWALI STORY ===== -->
+<section class="block">
+  <div class="diwali-divider"><span>🎵 Music & Story 🕯️</span></div>
+  <div class="eyebrow">✦ Happy Diwali 2026 ✦</div>
+  <h2 class="sec">Diwali Music & The Story of Diwali 🪔</h2>
+
+  <div class="grid c2">
+    <div class="card">
+      <h3>🎵 Diwali Ambient Music</h3>
+      <div class="music-bar" style="margin:14px 0">
+        <span style="font-size:2rem;animation:flicker 2.5s ease-in-out infinite">🪔</span>
+        <div class="m-info">
+          <div class="m-title">Diwali Ambience 2026</div>
+          <div class="m-sub">Pentatonic sitar tones — WebAudio</div>
+        </div>
+        <button class="btn ghost" id="musicToggleHome" style="padding:10px 18px;font-size:.9rem">🔇 Music OFF</button>
+      </div>
+      <p style="color:var(--muted);font-size:.9rem">
+        🔔 <b>Sound Effects:</b> Ghanti (bell) on enter, Crackers on fireworks, Diya tone on book open, Click sparks on every tap!
+      </p>
+    </div>
+    <div class="card">
+      <h3>🕯️ The Story of Diwali</h3>
+      <p style="color:var(--muted);margin-bottom:16px">Happy Diwali 2026 — दीपावली का पूरा इतिहास और कहानी। उत्पत्ति से लेकर आज तक — 12 Chapters में। रोशनी का यह सफर पढ़ो!</p>
+      <a class="btn ghost" href="puniverse.html">🕯️ The Story of Diwali पढ़ें →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="block" id="origin-video">
+  <div class="diwali-divider"><span>🖼️ Gallery 🖼️</span></div>
+  <div class="eyebrow">✦ Happy Diwali 2026 — Gallery ✦</div>
+  <h2 class="sec">Diwali 2026 — Special Gallery 🎆</h2>
+  <p class="lead">दीपावली 2026 के यादगार पलों की झलकियाँ — Tap करने पर sound सुनो! 🔔</p>
+
+  <div class="gal" id="extraGal" style="margin-top:20px"></div>
+  <dialog id="zoomDlg">
+    <p style="font-size:4rem;text-align:center">🪔</p>
+    <p id="zoomCap" style="margin:12px 0;color:var(--cream);text-align:center"></p>
+    <div style="text-align:center"><form method="dialog"><button class="btn" style="margin-top:8px">बंद करें ✕</button></form></div>
+  </dialog>
+</section>
+
+<!-- ===== DIWALI CTA ===== -->
+<section class="block" style="padding:40px 20px">
+  <div class="cta-diwali">
+    <div class="rangoli" style="margin-bottom:24px"></div>
+    <div class="eyebrow">🪔 Happy Diwali 2026 🪔</div>
+    <h2 class="sec gold-emboss-text" style="margin:10px 0 14px">रोशनी बाँटो — खुशी फैलाओ</h2>
+    <p class="lead">इस दीपावली 2026 पर इस website को अपने दोस्तों के साथ share करो। रोशनी बाँटने से बढ़ती है!</p>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:24px">
+      <a class="btn" href="#bookshelf-section">🪔 Library खोलें</a>
+      <button class="btn" id="fireworksBtn2" style="cursor:pointer">🎆 Fireworks!</button>
+      <button class="btn ghost" onclick="navigator.share&&navigator.share({title:'Happy Diwali 2026',text:'Diwali ki hardik shubhkamnayein! 🪔',url:location.href})" style="cursor:pointer">📤 Share करें</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== READER MODAL ===== -->
+<div id="reader" role="dialog" aria-modal="true" aria-label="Diwali Dohe Reader">
+  <div class="reader-box">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:4px">
+      <strong id="readerTitle" style="color:var(--gold-light)">Reader</strong>
+      <div style="display:flex;gap:8px">
+        <button class="btn ghost" id="musicToggle" style="padding:8px 14px;font-size:.88rem">🔇 Music OFF</button>
+        <button class="btn ghost" id="readerClose" style="padding:8px 14px;font-size:.88rem">✕ बंद</button>
+      </div>
+    </div>
+    <div class="reader-pages" id="readerPages" style="margin-top:16px"></div>
+    <div class="reader-bar">
+      <button class="btn ghost" id="prevPage">← पिछला</button>
+      <span id="pageInfo" style="color:var(--muted);font-size:.9rem"></span>
+      <button class="btn" id="nextPage">अगला →</button>
+    </div>
+    <p style="color:var(--muted);font-size:.8rem;margin-top:10px">
+      Arrow keys ← → • Esc to close • Page auto-saved • 🔔 Sound ON करो ऊपर!
+    </p>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div style="text-align:center;margin-bottom:28px">
+    <div class="diya-strip">
+      <span>🪔</span><span>🪔</span><span>🪔</span><span>🎆</span><span>🪔</span><span>🪔</span><span>🪔</span>
+    </div>
+    <p class="gold-emboss-text" style="font-size:1.8rem;margin-top:8px">Happy Diwali 2026</p>
+  </div>
+  <div class="fgrid">
+    <div>
+      <h3 style="color:var(--gold-light)">🪔 Happy Diwali 2026</h3>
+      <p style="color:var(--muted);margin:10px 0;font-size:.9rem">"इस दीपावली — ज्ञान का प्रकाश फैलाइए। रोशनी बाँटने से बढ़ती है।"</p>
+      <p style="color:var(--muted);font-size:.84rem">🪔 Festival of Lights 2026<br>दीपावली Special Edition</p>
+      <a href="contact.html" style="display:inline-block;margin-top:10px">☕ Support करें</a>
+    </div>
+    <div>
+      <h4 style="color:var(--gold-light);margin-bottom:10px">🪔 Library</h4>
+      <a href="#bookshelf-section">🪔 Diwali Bookshelf</a>
+      <a href="puniverse.html">🕯️ Story of Diwali</a>
+      <a href="sitemap.html">🗺️ Sitemap</a>
+    </div>
+    <div>
+      <h4 style="color:var(--gold-light);margin-bottom:10px">🪔 Community</h4>
+      <a href="about.html">🏛️ About</a>
+      <a href="contact.html">📬 Contact</a>
+      <a href="faq.html">❓ FAQ</a>
+      <a href="404.html">🎭 404 Page</a>
+    </div>
+    <div>
+      <h4 style="color:var(--gold-light);margin-bottom:10px">⚖️ Legal</h4>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms.html">Terms & Conditions</a>
+      <a href="copyright.html">Copyright</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="accessibility.html">Accessibility</a>
+    </div>
+  </div>
+  <div class="copy">
+    🪔 Happy Diwali 2026 — Festival of Lights 🪔<br>
+    © 2026 Diwali Special Edition. Non-commercial cultural parody archive.<br>
+    <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
+      <button class="btn ghost" id="replayIntro" style="padding:8px 20px;font-size:.9rem">🪔 Intro Replay</button>
+      <button class="btn ghost" id="fireworksBtn" style="padding:8px 20px;font-size:.9rem">🎆 Fireworks!</button>
+      <a href="#" onclick="scrollTo({top:0,behavior:'smooth'});return false" style="padding:8px 20px;font-size:.9rem;color:var(--muted)">↑ Top</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// wire the second fireworks button
+document.getElementById('fireworksBtn2')?.addEventListener('click',()=>{
+  if(typeof startFireworks==='function'){ startFireworks(6000); }
+  if(typeof playRocket==='function') playRocket();
+});
+</script>
+<script src="app.js"></script>
+</body>
+</html>
